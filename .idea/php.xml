@@ -132,6 +132,7 @@
       <path value="$PROJECT_DIR$/backend-v/vendor/php-open-source-saver/jwt-auth" />
       <path value="$PROJECT_DIR$/backend-v/vendor/namshi/jose" />
       <path value="$PROJECT_DIR$/backend-v/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/backend-v/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />

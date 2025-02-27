@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Illuminate\Support\Facades\Gate;
 use Validator;
 
 
@@ -17,6 +18,7 @@ class AuthController extends Controller
      */
     public function register()
     {
+        Gate::authorize('create', User::class);
         $validator = Validator::make(request()->all(), [
             'name' => 'required',
             'email' => 'required|email|unique:users',
